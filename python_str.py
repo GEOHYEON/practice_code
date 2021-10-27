@@ -27,3 +27,8 @@ test3 = '!@##   Oh my@@god!   !@#!@#'
 test3.strip("!@#$ ")
 test3.lstrip("!@#$ ")
 test3.rstrip("!@#$ ")
+
+test4 = ''
+# replace(str_A, str_B): A string 을 B string 으로 변경
+# format(str, ...): format에 string 집어넣음
+# str_target.join(str, ...): 매개변수 사이에 str_target을 집어넣음
