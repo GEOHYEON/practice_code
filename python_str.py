@@ -1,10 +1,10 @@
 # string의 객체 함수를 정리한 파일입니다.
 
 # dir: str 문자열 객체의 메서드 출력
-dir(str)
+# dir(str)
 
 # help(): str 문자열 객체 메소드 사용법
-help(str.upper)
+# help(str.upper)
 
 test1 = 'Hello Python'
 test2 = 'hello python'
@@ -89,9 +89,9 @@ test10.isdecimal()
 test10.isspace()
 test11.isspace()
 
-# count() - 특정 단어(문자열)의 수를 구함 (없으면 0을 반환)
-# startswith() - 특정 단어로 시작하는지 확인
-# endswith() - 특정 단어로 끝나는지 확인
+# count(str) - 특정 단어(문자열)의 수를 구함 (없으면 0을 반환)
+# startswith(str) - 특정 단어로 시작하는지 확인
+# endswith(str) - 특정 단어로 끝나는지 확인
 
 test12 = "hi hello hi hi hi"
 
@@ -99,4 +99,23 @@ test12.count("hi")
 test12.startswith("hi")
 test12.startswith("hello")
 test12.endswith("hi")
+
+test13 = "'I am a boy. I am a student'"
+
+# find(str): 특정 단어를 찾아 인덱스를 리턴 (없으면 -1을 리턴)
+# rfind(str): 뒤에서부터 특정 단어를 찾아 인덱스를 리턴 
+# in(str) or not in(str): 특정 단어가 있는지 없는지 리턴
+# index(str): find와 동일하지만 없을 때 예외를 발생시킴
+# rindex(str): rfind와 동일하지만 없을 때 예외를 발생시킴
+
+print("find example:", test13.find("boy"))
+print("rfind example:", test13.rfind("boy"))
+print("in example:", test13 in "boy")
+print("index example:", test13.index("boy"))
+print("rindex example:", test13.rindex("boy"))
+
+try:
+    print("index example:", test13.index("girl"))
+except ValueError:
+    print("index value error")
 
