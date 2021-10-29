@@ -8,10 +8,26 @@
 </head>
 <body>
     <button>Press me</button>
+    <button class="startmachine">Start machine</button>
+    <p>The machine is stopped.</p>
 </body>
 
 <script>
     const button = document.querySelector('button');
+    var btn = document.querySelector(".startmachine");
+    var txt = document.querySelector("p");
+
+    btn.addEventListener('click', updateBtn);
+
+    function updateBtn() {
+        if (btn.textContent === 'Start machine') {
+            btn.textContent = 'Stop machine';
+            txt.textContent = 'The machine has started!';
+        } else {
+            btn.textContent = 'Start machine';
+            txt.textContent = 'The machine is stopped.';
+        }
+    }
 
     button.onclick = function () {
         let name = prompt('What is your name?');
