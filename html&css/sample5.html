@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td{
+    /*
+    background-color: #96D4D4;
+    padding: 15px; > 셀 내 거리
+    padding-top: 5px;
+    padding-botton: 20px;
+    padding-left: 10px;
+    border-spacing: ; > 셀 간 거리
+    */
+}
+/*nth-child(even): 짝수의 raw에 한하여*/
+td:nth-child(odd){
+    background-color: white;
+}
+</style>
+</head>
+
+<body>
+<!-- html document file-->
+<!-- 
+caption: 
+th: table header
+td: content
+colspan: 열끼리 병합
+rawspan: 행끼리 병합
+
+-->
+<p>HTML TABLE - 1</p>
+<table style="width: 200px;"> 
+<caption>이것은 캡션이다.</caption>
+<tr>
+    <th colspan="2">명단표</th>
+</tr>
+<tr>
+    <th>이름</th>
+    <th>성별</th>
+</tr>
+<tr>
+    <td>노거현</td>
+    <td>남</td>
+</tr>
+<tr>
+    <td>강우민</td>
+    <td>남</td>
+</tr>
+</table>
+
+<p>HTML TABLE - 2: colgroup</p>
+
+<!-- 
+    colgroup: style more one gruop에 적용할때 / 중간에 적용시키기 위해서는 
+    앞의 col에 style을 지정안하면 됨. 
+    col: col로 열을 지정하고 style
+-->
+<table>
+<colgroup>
+    <col span="2" style="background-color:red">
+</colgroup>
+<tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+</tr>
+<tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+</tr>
+</table>
+
+<a href="sample4.html">sample4.html로 바로가기</a>
+<a href="sample6.html">sample6.html로 바로가기</a>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--파비콘(favicon.ico)
+1. 
+2. 
+$ 사파리에서는 적용안됨.
+-->
+<title>My Page Title</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+<body>
+<h2 id="C4">Chapter4</h2>
+<a href="#C4">Go to chapter4</a>
+<br>
+<a href="sample3.html">Go to Sample3.html</a>
+
+<p>밑의 사과 사진을 클릭하면 sample1.html으로 갑니다.</p>
+<a href="sample1.html">
+    <img src="apple.jpg" alt="apple pics" 
+    style="height: 30px;width: 30px;">
+</a>
+
+<p>Image map에 대하여</p>
+<p>Image 맵이란 클릭 가능한 영역을 표시하는 것을 의미합니다.</p>
+<!--
+1. img태그에서 usemap 속성 추가
+2. map 태그의 name에 usemap name과 같게 정의
+3. area 정의
+rect인 경우 (첫번째 왼쪽 여백, 위쪽 여백, 두 번째 왼쪽 여백, 위쪽 여백)
+circle인 경우 원의 중심 왼쪽 여백, 위쪽 여백, 반지름 길이-->
+<p>사과 이미지 속 여러 맵을 숨겨놓았습니다. 찾아서 클릭해보세요.</p>
+<img src="apple.jpg" usemap="#apple">
+<map name="apple" onclick="mapClick()">
+    <area shape="rect" coords="0,0,100,100" href="sample3.html">
+    <area shape="circle" coords="200, 200, 50" href="sample1.html">
+</map>
+
+<br>
+
+<p>밑의 사진은 화면 크기에 따라 변화합니다. </p>
+<picture>
+    <source media = "(min-width:1000px)" srcset="banana.jpg">
+    <source media = "(min-width:600px)" srcset="orange.jpg">
+    <img src="apple.jpg">
+</picture>
+
+<a href="sample3.html">sample3.html로 바로가기</a>
+<a href="sample5.html">sample5.html로 바로가기</a>
+
+<script>
+    function mapClick() {
+        alert("you click maps!!")
+    }
+</script>
+
+
+
+</body>
+</html>

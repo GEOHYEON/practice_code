@@ -1,0 +1,50 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    /*
+    background-color: 배경색
+    color: 색깔
+    font-family: font 종류
+    font-size: 폰트 크기
+    */
+    color: blue;
+    font-family: Verdana;
+    font-size: 300%;
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+  }
+
+  /*마우스 상태에 따라 디자인 변경
+  태그:link
+  태그:visited
+  태그:hover
+  태그:active
+  */
+
+  a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+  a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color:red;
+      background-color: white;
+      text-decoration: underline;
+  }
+
+  a:active {
+      color:yellow;
+      background-color: transparent;
+      text-decoration: underline;
+  }
