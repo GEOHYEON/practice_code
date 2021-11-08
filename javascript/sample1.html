@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h2> JavaScript Output</h2>
+<p>JavaScript Display를 위한 4가지 방법</p>
+<ul>
+    <li>innerHTML: javascript로 직접 html파일을 수정</li>
+    <li>document.write()</li>
+    <li>window.alert()</li>
+    <li>console.log()</li>
+</ul>
+<hr>
+<p>innerHTML example</p>
+<p id="demo"></p>
+<hr>
+<p>document.write example</p>
+<script>
+    document.write("이 문장은 document.write로 짜여져있습니다.");
+</script>
+<hr>
+<p>아래 버튼은 자바스크립트로 짜여져있습니다.</p>
+<input type="button" value="클릭!" onclick="demo()">
+
+
+<script>
+    document.getElementById("demo").innerHTML = 5+6;
+    function demo(){
+        window.alert("이 문장은 alert함수를 통해 실행되었습니다.");
+    }
+    console.log(5+6);
+</script>
+
+<hr>
+
+<h2></h2>
+
+<hr>
+<a href="sample2.html">sample2 html로 바로가기</a>
+
+</body>
+</html>
