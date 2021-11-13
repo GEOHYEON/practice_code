@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>Example Of String, Number</h2>
+    <h3>String example</h3>
+    <hr>
+    <p>string method</p>
+    <ul>
+        <li>length: return the length of a string</li>
+        <li>slice(start, end): returns the extracted part in a new string</li>
+        <li>substring(start, end): similar to slice but substring cannot accept negative index</li>
+        <li>substr(start, length): returns the extrated part which from start to start + length </li>
+        <li>replace(a, b): replace a with b in a string. (only first match)</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>length example: </li>
+        <p id="string1"></p>
+        <li>slice example: </li>
+        <p id="string2"></p>
+        <p> replace example: </p>
+        <p id="string3"></p>
+    </ul>
+
+    <hr>
+    <a href="sample1.html">sample1 html로 바로가기</a>
+    <a href="sample3.html">sample3 html로 바로가기</a>
+    
+    <script>
+        let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = txt.length;
+        let txt_slice = txt.slice(3,10);
+        document.getElementById("string1").innerHTML = "var txt의 length는 " + length + "입니다.";
+        // slice parameter can be negative.
+        document.getElementById("string2").innerHTML = "var txt의 3번째에서 10번째의 stringdms " + txt_slice + "입니다. ";
+        let txt1 = "전 문장입니다.";
+        let txt1_replace = txt1.replace("전", "후");
+        document.getElementById("string3").innerHTML = "바뀌기 전 문장: " + txt1 + "<br>바뀐 후 문장: " + txt1_replace;
+        // if you want to replace case insensitive, can use "/first element/i" (i: insensitive)
+        // if you want to replace all match element, you can use "/first element/g" (g: global match)
+        
+    </script>
+</body>
+</html>
