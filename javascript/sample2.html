@@ -21,10 +21,13 @@
         <p id="string1"></p>
         <li>slice example: </li>
         <p id="string2"></p>
-        <p> replace example: </p>
+        <li> replace example: </li>
         <p id="string3"></p>
-        <p> Converted to upper or lower case example: </p>
+        <li> Converted to upper or lower case example: </li>
         <p id="string4"></p>
+        <li> concat example: </li>
+        <p id="string5"></p>
+
     </ul>
 
     <hr>
@@ -43,6 +46,13 @@
         document.getElementById("string3").innerHTML = "바뀌기 전 문장: " + txt1 + "<br>바뀐 후 문장: " + txt1_replace;
         // if you want to replace case insensitive, can use "/first element/i" (i: insensitive)
         // if you want to replace all match element, you can use "/first element/g" (g: global match)
+        let txt2 = "Hello World!";
+        let txt2_uppercase = txt2.toUpperCase();
+        let txt2_lowercase = txt2.toLowerCase();
+        document.getElementById("string4").innerHTML = "orginal txt: " + txt2 +
+        "<br>uppercase: " + txt2_uppercase + "<br>lowercase: " + txt2_lowercase;
+        let txt3 = txt.concat(txt2);
+        document.getElementById("string5").innerHTML = "concat txt and txt2 result: " + txt3;
         
     </script>
 </body>
