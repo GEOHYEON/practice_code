@@ -27,8 +27,15 @@
         <p id="string4"></p>
         <li> concat example: </li>
         <p id="string5"></p>
+        <li> trim example: </li>
+        <p id="string6"></p>
+        
 
     </ul>
+
+    <hr>
+    
+    <h3>String example</h3>
 
     <hr>
     <a href="sample1.html">sample1 html로 바로가기</a>
@@ -53,6 +60,11 @@
         "<br>uppercase: " + txt2_uppercase + "<br>lowercase: " + txt2_lowercase;
         let txt3 = txt.concat(txt2);
         document.getElementById("string5").innerHTML = "concat txt and txt2 result: " + txt3;
+        // trim: removes whitespace from both side
+        let txt4 = "   Hello wor;d!  ";
+        let trim_txt4 = txt4.trim()
+        document.getElementById("string6").innerHTML = "previous string: " + txt4 + "<br/>after trim: " + trim_txt4;
+
         
     </script>
 </body>
